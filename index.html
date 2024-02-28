@@ -1,32 +1,59 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Div with Drop Shadow</title>
+    <title>Page</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            height: 100vh; /* Ensure full viewport height */
             display: flex;
-            justify-content: center;
             align-items: center;
-            background-color: #f0f0f0; /* Light gray background */
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
         }
-        .centered-div {
-            width: 300px; /* Adjust width as needed */
-            height: 200px; /* Adjust height as needed */
-            background-color: #ffffff; /* White background for the div */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow effect */
+
+        .content-container {
+            text-align: center;
+            padding: 48px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #ff0000;
+        }
+
+        p {
+            color: #333333;
+        }
+
+        .menu-links {
+            margin-top: 20px;
+        }
+
+        .menu-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0066cc;
         }
     </style>
 </head>
 <body>
-    <div class="centered-div">
-        <!-- Content of the centered div goes here -->
-        <h2>Centered Div with Drop Shadow</h2>
-        <p>This div is centered both horizontally and vertically on the page and has a drop shadow effect.</p>
+    <div class="content-container">
+        <h1>Content/h1>
+        <p>Container</p>
+
+        <div class="menu-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
     </div>
+
+
 </body>
 </html>
